@@ -1,6 +1,8 @@
 import os
 import sys
 
+#-----DIEGOS REFACTORING-----#
+
 def menu():
     os.system('cls')
     print("Selecciona una opción")
