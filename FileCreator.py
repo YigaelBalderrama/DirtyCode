@@ -20,10 +20,10 @@ def main(n=''):
         if menu_selection == "1":
             print("")
             input("Has pulsado la opción 1...\nEscribe el contenido del texto(escribe '<>' para finalizar)")
-            for line in sys.stdin:
-                if line == '<>\n':
+            for console_line in sys.stdin:
+                if console_line == '<>\n':
                     break
-                for var in line.split():
+                for var in console_line.split():
                     user_text += var
         elif menu_selection == "2":
             print("")
