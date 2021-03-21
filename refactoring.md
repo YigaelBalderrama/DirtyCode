@@ -13,7 +13,7 @@
 * * Lines: 16, 27 & 32
 
 ### Code smell #3
-* Smell: "Naming matters". "line" is a bad name for the variable that saves the each console line content.
+* Smell: "Naming matters". "line" is a bad name for the variable that saves each console line content.
 * * Lines: 23, 24 & 26
 
 * Refactoring: Changed the "line" variable name to "console_line" to make it easy to understand.
