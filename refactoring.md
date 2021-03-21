@@ -20,11 +20,11 @@
 * * Lines: 23, 24 & 26
 
 ### Code smell #4
-* Smell:
-* * Lines:
+* Smell: "Naming matters". "n" is a bad name for the variable that saves the txt file name.
+* * Lines: 30, 31, 36 & 37
 
-* Refactoring:
-* * Lines:
+* Refactoring: Changed the "n" variable name to "file_name" to make it easy to understand.
+* * Lines: 30, 31, 36 & 37
 
 ### Code smell #5
 * Smell:

@@ -12,7 +12,7 @@ def menu():
     print("\t9 - Salir")
 
 
-def main(n=''):
+def main(file_name=''):
     user_text = ''
     while True:
         menu()
@@ -27,14 +27,14 @@ def main(n=''):
                     user_text += var
         elif menu_selection == "2":
             print("")
-            n =input("Has pulsado la opción 2...\nEscribe el nombre del archivo\n")
-            file = open(f'{n}.txt', "w")
+            file_name =input("Has pulsado la opción 2...\nEscribe el nombre del archivo\n")
+            file = open(f'{file_name}.txt', "w")
             file.write(user_text + os.linesep)
             file.close()
         elif menu_selection == "3":
             print("")
-            input(f"Se abrira el archivo {n}.txt\npulsa una tecla para continuar")
-            os.system(f"start {n}.txt")
+            input(f"Se abrira el archivo {file_name}.txt\npulsa una tecla para continuar")
+            os.system(f"start {file_name}.txt")
         elif menu_selection == "9":
             break
         else:
