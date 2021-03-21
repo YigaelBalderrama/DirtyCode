@@ -1,34 +1,34 @@
-### Code smell 1
+### Code smell #1
+Smell:  "Naming matters"
+Lines: 19, 20, 28, 34 & 38
+
+Refactoring: Changed the "iter" variable name to "menu_selection" to make it easy to understand.
+Lines: 19, 20, 28, 34 & 38
+
+### Code smell #2
 Smell:
-Lineas:
+Lines:
 
 Refactoring:
-Lineas:
+Lines:
 
-### Code smell 2
+### Code smell #3
 Smell:
-Lineas:
+Lines:
 
 Refactoring:
-Lineas:
+Lines:
 
-### Code smell 3
+### Code smell #4
 Smell:
-Lineas:
+Lines:
 
 Refactoring:
-Lineas:
+Lines:
 
-### Code smell 4
+### Code smell #5
 Smell:
-Lineas:
+Lines:
 
 Refactoring:
-Lineas:
-
-### Code smell 5
-Smell:
-Lineas:
-
-Refactoring:
-Lineas:
+Lines:
