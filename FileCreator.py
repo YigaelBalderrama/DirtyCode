@@ -13,7 +13,7 @@ def menu():
 
 
 def main(n=''):
-    t = ''
+    user_text = ''
     while True:
         menu()
         menu_selection = input("inserta un numero valor (1-9)")
@@ -24,12 +24,12 @@ def main(n=''):
                 if line == '<>\n':
                     break
                 for var in line.split():
-                    t += var
+                    user_text += var
         elif menu_selection == "2":
             print("")
             n =input("Has pulsado la opción 2...\nEscribe el nombre del archivo\n")
             file = open(f'{n}.txt', "w")
-            file.write(t + os.linesep)
+            file.write(user_text + os.linesep)
             file.close()
         elif menu_selection == "3":
             print("")

@@ -6,11 +6,11 @@ Refactoring: Changed the "iter" variable name to "menu_selection" to make it eas
 Lines: 19, 20, 28, 34 & 38
 
 ### Code smell #2
-Smell:
-Lines:
+Smell: "Naming matters". "t" is a bad name for the variable that saves the user text.
+Lines: 16, 27 & 32
 
-Refactoring:
-Lines:
+Refactoring: Changed the "t" variable name to "user_text" to make it easy to understand.
+Lines: 16, 27 & 32
 
 ### Code smell #3
 Smell:
