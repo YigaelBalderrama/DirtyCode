@@ -10,6 +10,7 @@ Lines: 19, 20, 28, 34 & 38
 Lines: 16, 27 & 32
 
 * Refactoring: Changed the "t" variable name to "user_text" to make it easy to understand.
+
 Lines: 16, 27 & 32
 
 ### Code smell #3
