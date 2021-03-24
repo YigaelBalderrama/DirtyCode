@@ -21,6 +21,13 @@ def writeText(user_text):
             user_text += var
     return user_text
 
+def saveNewTxtFile(user_text):
+    print("")
+    file_name =input("Has pulsado la opción 2...\nEscribe el nombre del archivo\n")
+    file = open(f'{file_name}.txt', "w")
+    file.write(user_text + os.linesep)
+    file.close()
+    return file_name
 
 def main(file_name=''):
     user_text = ''
@@ -30,11 +37,7 @@ def main(file_name=''):
         if menu_selection == "1":
             user_text = writeText(user_text)
         elif menu_selection == "2":
-            print("")
-            file_name =input("Has pulsado la opción 2...\nEscribe el nombre del archivo\n")
-            file = open(f'{file_name}.txt', "w")
-            file.write(user_text + os.linesep)
-            file.close()
+            file_name = saveNewTxtFile(user_text)
         elif menu_selection == "3":
             print("")
             input(f"Se abrira el archivo {file_name}.txt\npulsa una tecla para continuar")
