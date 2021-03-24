@@ -42,3 +42,10 @@ It is recommended to check each refactoring looking at the commit where a refact
 
 * Refactoring: Continuing refactoring the main() code smell. I moved all the code from the second IF statement into another function
 * * Lines: Function call on line 40  |  Actual Method in lines 24 to 30
+
+### Code smell #7
+* Smell: "Big Method". The main() function is carrying al tasks
+* * Lines: 42 to 44
+
+* Refactoring: Continuing refactoring the main() code smell. I moved all the code from the third IF statement into another function
+* * Lines: Function call on line 47  |  Actual Method in lines 32 to 35

@@ -29,6 +29,11 @@ def saveNewTxtFile(user_text):
     file.close()
     return file_name
 
+def openLastFileUsed(file_name):
+    print("")
+    input(f"Se abrira el archivo {file_name}.txt\npulsa una tecla para continuar")
+    os.system(f"start {file_name}.txt")
+
 def main(file_name=''):
     user_text = ''
     while True:
@@ -39,9 +44,7 @@ def main(file_name=''):
         elif menu_selection == "2":
             file_name = saveNewTxtFile(user_text)
         elif menu_selection == "3":
-            print("")
-            input(f"Se abrira el archivo {file_name}.txt\npulsa una tecla para continuar")
-            os.system(f"start {file_name}.txt")
+            openLastFileUsed(file_name)
         elif menu_selection == "9":
             break
         else:
