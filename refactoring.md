@@ -1,3 +1,6 @@
+### Aclaration
+It is recommended to check each codesmell refactoring looking at the commit where a refactoring ocurred. This is to avoid confusion as some code may change it's lines from version to version because of the refactoring.
+
 ### Code smell #1
 * Smell:  "Naming matters"
 * * Lines: 19, 20, 28, 34 & 38
@@ -27,8 +30,8 @@
 * * Lines: 30, 31, 36 & 37
 
 ### Code smell #5
-* Smell:
-* * Lines:
+* Smell: "Big Method". The main() function is carrying al tasks
+* * Lines: 31 to 37
 
-* Refactoring:
-* * Lines:
+* Refactoring: As a first step I moved all the code from the first IF statement into another function
+* * Lines: Function call on line 37  |  Actual Method in lines 14 to 22
