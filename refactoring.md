@@ -56,3 +56,10 @@ It is recommended to check each refactoring looking at the commit where a refact
 
 * Refactoring: Changed the "var" variable name to "text_line" to make it easy to understand.
 * * Lines: 20 & 21
+
+### Code smell #9
+* Smell: "Duplicated Code".  "print("")" is duplicated 4 times
+* * Lines: 15, 25, 33 & 51
+
+* Refactoring: Deleted all the "print("")" and used a line jump "\n" in the necessary places. 
+* * Lines: 15, 24, 31 & 48

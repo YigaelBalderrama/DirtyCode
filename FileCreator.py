@@ -12,8 +12,7 @@ def menu():
     print("\t9 - Salir")
 
 def writeText(user_text):
-    print("")
-    print("Has pulsado la opción 1...\nEscribe el contenido del texto(escribe '<>' para finalizar)\n")
+    print("\nHas pulsado la opción 1...\nEscribe el contenido del texto(escribe '<>' para finalizar)\n")
     for console_line in sys.stdin:
         if console_line == '<>\n':
             break
@@ -22,16 +21,14 @@ def writeText(user_text):
     return user_text
 
 def saveNewTxtFile(user_text):
-    print("")
-    file_name =input("Has pulsado la opción 2...\nEscribe el nombre del archivo\n")
+    file_name =input("\nHas pulsado la opción 2...\nEscribe el nombre del archivo\n")
     file = open(f'{file_name}.txt', "w")
     file.write(user_text + os.linesep)
     file.close()
     return file_name
 
 def openLastFileUsed(file_name):
-    print("")
-    input(f"Se abrira el archivo {file_name}.txt\npulsa una tecla para continuar")
+    input(f"\nSe abrira el archivo {file_name}.txt\npulsa una tecla para continuar")
     os.system(f"start {file_name}.txt")
 
 def main(file_name=''):
@@ -48,8 +45,7 @@ def main(file_name=''):
         elif menu_selection == "9":
             break
         else:
-            print("")
-            input("No has pulsado ninguna opción correcta...\npulsa una tecla para continuar")
+            input("\nNo has pulsado ninguna opción correcta...\npulsa una tecla para continuar")
 
 
 if __name__ == "__main__":
