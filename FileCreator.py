@@ -13,7 +13,7 @@ def menu():
 
 def writeText(user_text):
     print("")
-    input("Has pulsado la opción 1...\nEscribe el contenido del texto(escribe '<>' para finalizar)\n")
+    print("Has pulsado la opción 1...\nEscribe el contenido del texto(escribe '<>' para finalizar)\n")
     for console_line in sys.stdin:
         if console_line == '<>\n':
             break
