@@ -13,12 +13,12 @@ def menu():
 
 def writeText(user_text):
     print("")
-    input("Has pulsado la opción 1...\nEscribe el contenido del texto(escribe '<>' para finalizar)")
+    input("Has pulsado la opción 1...\nEscribe el contenido del texto(escribe '<>' para finalizar)\n")
     for console_line in sys.stdin:
         if console_line == '<>\n':
             break
-        for var in console_line.split():
-            user_text += var
+        for text_line in console_line.split():
+            user_text += text_line
     return user_text
 
 def saveNewTxtFile(user_text):

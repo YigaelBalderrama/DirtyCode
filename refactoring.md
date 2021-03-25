@@ -49,3 +49,10 @@ It is recommended to check each refactoring looking at the commit where a refact
 
 * Refactoring: Continuing refactoring the main() code smell. I moved all the code from the third IF statement into another function
 * * Lines: Function call on line 47  |  Actual Method in lines 32 to 35
+
+### Code smell #8
+* Smell: "Naming matters". "var" is a bad name for the variable that saves a txt line.
+* * Lines: 20 & 21
+
+* Refactoring: Changed the "var" variable name to "text_line" to make it easy to understand.
+* * Lines: 20 & 21
