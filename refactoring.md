@@ -1,5 +1,9 @@
-### Aclaration
+## Aclaration
 It is recommended to check each refactoring looking at the commit where a refactoring ocurred and checking the code smell lines in a previous version from the refectoring commit. This is to avoid confusion as some code may change it's lines from version to version because of the refactoring.
+
+Code smells 1 to 4 and 8 correspond to the "Naming matters" codesmell
+Code smells 5 to 7  correspond to the "Big method" codesmell
+Code smell 9 corresponds to the "Duplicated code" codesmell
 
 ### Code smell #1
 * Smell:  "Naming matters"
@@ -63,3 +67,7 @@ It is recommended to check each refactoring looking at the commit where a refact
 
 * Refactoring: Deleted all the "print("")" and used a line jump "\n" in the necessary places. 
 * * Lines: 15, 24, 31 & 48
+
+## Conclution
+This code was not smelling too bad.
+Now that it looks clean to me, maybe the code could be separated into different classes to make it look cleaner.
